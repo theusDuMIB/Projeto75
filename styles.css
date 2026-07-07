@@ -54,13 +54,11 @@ body {
 
 .hero-overlay {
     background:
-        linear-gradient(
-            180deg,
+        linear-gradient(180deg,
             rgba(10, 10, 10, 0.3) 0%,
             rgba(10, 10, 10, 0.1) 40%,
             rgba(10, 10, 10, 0.7) 80%,
-            #0a0a0a 100%
-        );
+            #0a0a0a 100%);
 }
 
 /* =========================
@@ -88,7 +86,7 @@ body {
 
     text-decoration: none;
 
-    
+
 
     transition:
         transform .3s ease,
@@ -166,11 +164,9 @@ body {
     border-radius: 50%;
 
     background:
-        radial-gradient(
-            circle,
+        radial-gradient(circle,
             rgba(229, 184, 0, 0.06) 0%,
-            transparent 70%
-        );
+            transparent 70%);
 
     pointer-events: none;
 
@@ -333,7 +329,7 @@ body {
     inset: 0;
 
     border:
-        1px solid rgba(255,255,255,0.05);
+        1px solid rgba(255, 255, 255, 0.05);
 
     border-radius: 24px;
 
@@ -347,11 +343,9 @@ body {
     inset: 0;
 
     background:
-        linear-gradient(
-            to top,
-            rgba(0,0,0,.55),
-            transparent 45%
-        );
+        linear-gradient(to top,
+            rgba(0, 0, 0, .55),
+            transparent 45%);
 
     opacity: 0;
 
@@ -369,25 +363,21 @@ body {
         filter .6s ease;
 
     filter:
-        brightness(.78)
-        contrast(1.08)
-        saturate(1.1);
+        brightness(.78) contrast(1.08) saturate(1.1);
 }
 
 .gallery-item:hover {
     transform: translateY(-6px);
 
     box-shadow:
-        0 20px 40px rgba(0,0,0,.45);
+        0 20px 40px rgba(0, 0, 0, .45);
 }
 
 .gallery-item:hover img {
     transform: scale(1.08);
 
     filter:
-        brightness(.95)
-        contrast(1.1)
-        saturate(1.15);
+        brightness(.95) contrast(1.1) saturate(1.15);
 }
 
 .gallery-item:hover::after {
@@ -484,7 +474,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 55px;
+    gap: 30px;
 }
 
 /* =========================
@@ -507,102 +497,104 @@ body {
 }
 
 .menu-download-btn:hover {
+    box-shadow: 0 20px 40px rgba(229, 184, 0, .25);
     transform: translateY(-4px);
-    box-shadow:
-        0 20px 40px rgba(229,184,0,.25);
 }
+
+
 
 /* =========================
    DOWNLOAD BUTTON
 ========================= */
 .btn-download-menu {
-  width: 60px;
-  height: 60px;
-  border: none;
-  border-radius: 50%;
-  background-color: rgb(27, 27, 27);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  position: relative;
-  transition-duration: 0.3s;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
 }
 
 .svgIcon {
-  fill: #E5B800;
+    fill: #E5B800;
 }
 
 .icon2 {
-  width: 18px;
-  height: 5px;
-  border-bottom: 2px solid #E5B800;
-  border-left: 2px solid #E5B800;
-  border-right: 2px solid #E5B800;
+    width: 18px;
+    height: 5px;
+    border-bottom: 2px solid #E5B800;
+    border-left: 2px solid #E5B800;
+    border-right: 2px solid #E5B800;
 }
 
 .tooltip {
-  position: absolute;
-  right: -80px;
-  opacity: 0;
-  background-color: rgb(12, 12, 12);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: 0.2s;
-  pointer-events: none;
-  letter-spacing: 0.5px;
+    position: absolute;
+    right: -80px;
+    opacity: 0;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.2s;
+    pointer-events: none;
+    letter-spacing: 0.5px;
 }
 
 .tooltip::before {
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: rgb(12, 12, 12);
-  background-size: 1000%;
-  background-position: center;
-  transform: rotate(45deg);
-  left: -5%;
-  transition-duration: 0.3s;
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: rgb(12, 12, 12);
+    background-size: 1000%;
+    background-position: center;
+    transform: rotate(45deg);
+    left: -5%;
+    transition-duration: 0.3s;
 }
 
 .btn-download-menu:hover .tooltip {
-  opacity: 1;
-  transition-duration: 0.3s;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .btn-download-menu:hover {
-  background-color: #E5B800;
-  transition-duration: 0.3s;
+    background-color: #E5B800;
+    transition-duration: 0.3s;
+    box-shadow: 0 20px 40px rgba(229, 184, 0, .25);
 }
 
 .btn-download-menu:hover .icon2 {
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 
 .btn-download-menu:hover .svgIcon {
-  fill: black;
-  animation: slide-in-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    fill: black;
+    animation: slide-in-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes slide-in-top {
-  0% {
-    transform: translateY(-10px);
-    opacity: 0;
-  }
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
 
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 
@@ -662,14 +654,12 @@ body {
     border-radius: 28px;
 
     background:
-        linear-gradient(
-            180deg,
+        linear-gradient(180deg,
             #181818 0%,
-            #111 100%
-        );
+            #111 100%);
 
     border:
-        1px solid rgba(255,255,255,.05);
+        1px solid rgba(255, 255, 255, .05);
 
     transition:
         transform .4s ease,
@@ -681,10 +671,10 @@ body {
     transform: translateY(-10px);
 
     border-color:
-        rgba(229,184,0,.25);
+        rgba(229, 184, 0, .25);
 
     box-shadow:
-        0 30px 60px rgba(0,0,0,.45);
+        0 30px 60px rgba(0, 0, 0, .45);
 }
 
 .popular-image {
@@ -704,16 +694,14 @@ body {
         filter .5s ease;
 
     filter:
-        brightness(.8)
-        contrast(1.05);
+        brightness(.8) contrast(1.05);
 }
 
 .popular-card:hover img {
     transform: scale(1.08);
 
     filter:
-        brightness(.95)
-        contrast(1.1);
+        brightness(.95) contrast(1.1);
 }
 
 .popular-content {
@@ -728,10 +716,10 @@ body {
     border-radius: 999px;
 
     background:
-        rgba(229,184,0,.12);
+        rgba(229, 184, 0, .12);
 
     border:
-        1px solid rgba(229,184,0,.25);
+        1px solid rgba(229, 184, 0, .25);
 
     color: #E5B800;
 
@@ -816,7 +804,7 @@ body {
     background: #111;
 
     border:
-        1px solid rgba(255,255,255,.06);
+        1px solid rgba(255, 255, 255, .06);
 
     transition:
         transform .45s ease,
@@ -828,10 +816,10 @@ body {
     transform: translateY(-10px);
 
     border-color:
-        rgba(229,184,0,.25);
+        rgba(229, 184, 0, .25);
 
     box-shadow:
-        0 25px 60px rgba(0,0,0,.5);
+        0 25px 60px rgba(0, 0, 0, .5);
 }
 
 .event-image {
@@ -853,18 +841,14 @@ body {
         filter .6s ease;
 
     filter:
-        brightness(.75)
-        contrast(1.05)
-        saturate(1.05);
+        brightness(.75) contrast(1.05) saturate(1.05);
 }
 
 .event-card:hover .event-image img {
     transform: scale(1.08);
 
     filter:
-        brightness(.92)
-        contrast(1.1)
-        saturate(1.15);
+        brightness(.92) contrast(1.1) saturate(1.15);
 }
 
 .event-overlay {
@@ -872,12 +856,10 @@ body {
     inset: 0;
 
     background:
-        linear-gradient(
-            to top,
-            rgba(0,0,0,.9) 0%,
-            rgba(0,0,0,.2) 55%,
-            rgba(0,0,0,.05) 100%
-        );
+        linear-gradient(to top,
+            rgba(0, 0, 0, .9) 0%,
+            rgba(0, 0, 0, .2) 55%,
+            rgba(0, 0, 0, .05) 100%);
 }
 
 .event-tag {
@@ -892,7 +874,7 @@ body {
 
     border-radius: 999px;
 
-    background: rgba(229,184,0,.95);
+    background: rgba(229, 184, 0, .95);
 
     color: #000;
 
@@ -956,7 +938,7 @@ body {
     padding-top: 18px;
 
     border-top:
-        1px solid rgba(255,255,255,.06);
+        1px solid rgba(255, 255, 255, .06);
 }
 
 .event-footer span {
@@ -1029,14 +1011,12 @@ body {
     border-radius: 30px;
 
     background:
-        linear-gradient(
-            180deg,
-            rgba(255,255,255,0.03),
-            rgba(255,255,255,0.015)
-        );
+        linear-gradient(180deg,
+            rgba(255, 255, 255, 0.03),
+            rgba(255, 255, 255, 0.015));
 
     border:
-        1px solid rgba(255,255,255,0.06);
+        1px solid rgba(255, 255, 255, 0.06);
 
     overflow: hidden;
 
@@ -1052,10 +1032,10 @@ body {
     transform: translateY(-6px);
 
     border-color:
-        rgba(229,184,0,0.2);
+        rgba(229, 184, 0, 0.2);
 
     box-shadow:
-        0 20px 60px rgba(0,0,0,0.35);
+        0 20px 60px rgba(0, 0, 0, 0.35);
 }
 
 /* =========================================
@@ -1069,14 +1049,12 @@ body {
     border-radius: 18px;
 
     background:
-        linear-gradient(
-            135deg,
-            rgba(229,184,0,0.16),
-            rgba(229,184,0,0.05)
-        );
+        linear-gradient(135deg,
+            rgba(229, 184, 0, 0.16),
+            rgba(229, 184, 0, 0.05));
 
     border:
-        1px solid rgba(229,184,0,0.14);
+        1px solid rgba(229, 184, 0, 0.14);
 
     display: flex;
     align-items: center;
@@ -1124,14 +1102,12 @@ body {
     overflow: hidden;
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             #181818,
-            #101010
-        );
+            #101010);
 
     border:
-        1px solid rgba(255,255,255,0.06);
+        1px solid rgba(255, 255, 255, 0.06);
 
     transition:
         transform .45s ease,
@@ -1153,21 +1129,19 @@ body {
     border-radius: 50%;
 
     background:
-        radial-gradient(
-            circle,
-            rgba(229,184,0,0.12),
-            transparent 70%
-        );
+        radial-gradient(circle,
+            rgba(229, 184, 0, 0.12),
+            transparent 70%);
 }
 
 .instagram-card:hover {
     transform: translateY(-8px);
 
     border-color:
-        rgba(229,184,0,0.18);
+        rgba(229, 184, 0, 0.18);
 
     box-shadow:
-        0 30px 80px rgba(0,0,0,0.45);
+        0 30px 80px rgba(0, 0, 0, 0.45);
 }
 
 .social-left {
@@ -1240,10 +1214,10 @@ body {
 
     background: #111;
 
-    border: 1px solid rgba(255,255,255,0.06);
+    border: 1px solid rgba(255, 255, 255, 0.06);
 
     box-shadow:
-        0 25px 80px rgba(0,0,0,0.35);
+        0 25px 80px rgba(0, 0, 0, 0.35);
 }
 
 .map-card iframe {
@@ -1281,7 +1255,7 @@ body {
     text-decoration: none;
 
     box-shadow:
-        0 10px 30px rgba(0,0,0,0.25);
+        0 10px 30px rgba(0, 0, 0, 0.25);
 
     transition:
         transform .3s ease,
@@ -1305,10 +1279,10 @@ body {
     padding: 90px 60px;
     border-radius: 38px;
     text-align: center;
-    background: radial-gradient(circle at top left, rgba(255,255,255,0.12), transparent 30% );
-    background:  #c89b00 100%;
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 30px 100px rgba(0,0,0,0.45);
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.12), transparent 30%);
+    background: #c89b00 100%;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 30px 100px rgba(0, 0, 0, 0.45);
     isolation: isolate;
 }
 
@@ -1320,7 +1294,7 @@ body {
     top: -320px;
     right: -260px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(255,255,255,0.12), transparent 70%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.12), transparent 70%);
     z-index: -1;
 }
 
@@ -1336,7 +1310,7 @@ body {
 .reservation-card p {
     max-width: 700px;
     margin: 0 auto 38px;
-    color: rgba(0,0,0,0.72);
+    color: rgba(0, 0, 0, 0.72);
     font-size: 1.05rem;
     line-height: 1.8;
     position: relative;
@@ -1354,20 +1328,20 @@ body {
     gap: 16px;
     padding: 22px 42px;
     border-radius: 999px;
-    background: linear-gradient(135deg,#25D366, #18b954);
+    background: linear-gradient(135deg, #25D366, #18b954);
     color: #fff;
     font-weight: 800;
     font-size: 1rem;
     text-decoration: none;
-    border: 1px solid rgba(255,255,255,0.15);
-    box-shadow: 0 10px 30px rgba(37,211,102,0.35), 0 0 40px rgba(37,211,102,0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.35), 0 0 40px rgba(37, 211, 102, 0.15);
     transition: transform .35s ease, box-shadow .35s ease, filter .35s ease;
 }
 
 .whatsapp-reserve-btn:hover {
     transform: translateY(-6px) scale(1.05);
     filter: brightness(1.05);
-    box-shadow: 0 20px 50px rgba(37,211,102,0.45), 0 0 60px rgba(37,211,102,0.22);
+    box-shadow: 0 20px 50px rgba(37, 211, 102, 0.45), 0 0 60px rgba(37, 211, 102, 0.22);
 }
 
 
@@ -1399,6 +1373,7 @@ body {
     .map-card {
         min-height: 420px;
     }
+
 
 }
 
@@ -1513,6 +1488,13 @@ body {
         gap: 20px;
     }
 
+    /* MENU - BUTTON*/
+    .menu-download-btn{
+        width: 220px;
+        font-size: 12pt;
+        font-weight: bold
+    }
+
     /* CARDS */
     .contact-info-card,
     .instagram-card,
@@ -1556,7 +1538,6 @@ body {
     .social-icon {
         width: 64px;
         height: 64px;
-
         border-radius: 20px;
     }
 
@@ -1584,15 +1565,12 @@ body {
 
     .reservation-card p {
         font-size: 0.92rem;
-
         line-height: 1.7;
     }
 
     .whatsapp-reserve-btn {
         font-size: 0.92rem;
-
         padding: 16px 20px;
-
         gap: 12px;
     }
 
