@@ -453,3 +453,42 @@ window.addEventListener('scroll', () => {
     }
     prevScroll = window.scrollY;
 });
+
+
+
+
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+const track = document.querySelector(".gallery-track");
+
+if (track) {
+
+    gsap.to(track, {
+
+        x: () => -(track.scrollWidth - window.innerWidth),
+
+        ease: "none",
+
+        scrollTrigger: {
+
+            trigger: ".gallery",
+
+            start: "top top",
+
+            end: () => "+=" + (track.scrollWidth - window.innerWidth),
+
+            scrub: true,
+
+            pin: true,
+
+            anticipatePin: 1,
+
+            invalidateOnRefresh: true
+
+        }
+
+    });
+
+}

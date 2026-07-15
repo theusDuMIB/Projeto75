@@ -244,145 +244,110 @@ body {
    GALLERY SECTION
 ========================= */
 
-.gallery-section {
-    position: relative;
-
-    padding: 140px 6%;
-
-    background: #0a0a0a;
-}
-
-.gallery-header {
-    text-align: center;
-
-    margin-bottom: 80px;
-}
-
-.gallery-header .divider-line {
-    margin: 0 auto 24px;
-}
-
-.gallery-header h2 {
-    font-size: clamp(3rem, 5vw, 5rem);
-    font-weight: 800;
-
-    line-height: 1;
-
-    margin-bottom: 16px;
-}
-
-.gallery-header h2 span {
-    color: #E5B800;
-}
-
-.gallery-header p {
-    max-width: 600px;
-
-    margin: 0 auto;
-
-    color: #8a8a8a;
-
-    font-size: 1.05rem;
-
-    line-height: 1.8;
-}
-
-/* =========================
-   GALLERY GRID
-========================= */
-
-.gallery-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(280px, 1fr));
-
-    gap: 20px;
-}
-
-/* =========================
-   GALLERY CARD
-========================= */
-
-.gallery-item {
-    position: relative;
-
-    height: 420px;
-
+.gallery {
+    height: 100vh;
     overflow: hidden;
-
-    border-radius: 24px;
-
-    background: #111;
-
-    cursor: pointer;
-
-    transition:
-        transform .4s ease,
-        box-shadow .4s ease;
+    display: flex;
+    align-items: center;
 }
 
-.gallery-item::before {
-    content: '';
-
-    position: absolute;
-    inset: 0;
-
-    border:
-        1px solid rgba(255, 255, 255, 0.05);
-
-    border-radius: 24px;
-
-    z-index: 2;
+.gallery-track {
+    display: flex;
+    gap: 40px;
+    padding-inline: 10vw;
 }
 
-.gallery-item::after {
-    content: '';
-
-    position: absolute;
-    inset: 0;
-
-    background:
-        linear-gradient(to top,
-            rgba(0, 0, 0, .55),
-            transparent 45%);
-
-    opacity: 0;
-
-    transition: opacity .4s ease;
+.image {
+    width: 700px;
+    height: 70vh;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 28px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, .4);
 }
 
-.gallery-item img {
+.image img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
-    transition:
-        transform .8s ease,
-        filter .6s ease;
-
-    filter:
-        brightness(.78) contrast(1.08) saturate(1.1);
 }
 
-.gallery-item:hover {
-    transform: translateY(-6px);
+/* ==========================================
+   MOBILE GALLERY
+========================================== */
 
-    box-shadow:
-        0 20px 40px rgba(0, 0, 0, .45);
+.mobile-gallery{
+    display: none;
 }
 
-.gallery-item:hover img {
-    transform: scale(1.08);
+@media (max-width:768px){
 
-    filter:
-        brightness(.95) contrast(1.1) saturate(1.15);
+    /* Esconde o carrossel desktop */
+    .gallery{
+        display: none;
+    }
+
+    .mobile-gallery{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 70px 0;
+        overflow: hidden;
+        background: transparent;
+    }
+
+    .mobile-track{
+        display: flex;
+        gap: 18px;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        padding-inline: clamp(18px,5vw,30px);
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+
+    }
+
+    .mobile-track::-webkit-scrollbar{
+        display:none;
+    }
+
+    .mobile-card{
+        flex: 0 0 84%;
+        aspect-ratio: 1/1;
+        scroll-snap-align: center;
+        overflow: hidden;
+        border-radius: 24px;
+        background: #1b1b1b;
+        box-shadow: 0 12px 35px rgba(0,0,0,.35);
+        transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+    }
+
+    .mobile-card:active{
+        transform: scale(.98);
+    }
+
+    .mobile-card img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        transition:
+        transform .6s ease;
+        user-select:none;
+        pointer-events:none;
+    }
+
+    .mobile-card:active img{
+        transform: scale(1.06);
+    }
+
 }
 
-.gallery-item:hover::after {
-    opacity: 1;
-}
 
 /* =========================
    MENU SECTION
@@ -1489,7 +1454,7 @@ body {
     }
 
     /* MENU - BUTTON*/
-    .menu-download-btn{
+    .menu-download-btn {
         width: 220px;
         font-size: 12pt;
         font-weight: bold
