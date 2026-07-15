@@ -251,6 +251,17 @@ body {
     align-items: center;
 }
 
+.galery h2 {
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.galery h2 span {
+    color: #E5B800;
+}
+
 .gallery-track {
     display: flex;
     gap: 40px;
@@ -409,11 +420,8 @@ body {
 
 .menu-header h2 {
     font-size: clamp(3rem, 5vw, 5.5rem);
-
     font-weight: 800;
-
     line-height: 1;
-
     margin-bottom: 24px;
 }
 
@@ -423,13 +431,9 @@ body {
 
 .menu-header p {
     max-width: 750px;
-
     margin: 0 auto 40px;
-
     color: #8d8d8d;
-
     font-size: 1.1rem;
-
     line-height: 1.8;
 }
 
