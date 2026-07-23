@@ -254,102 +254,364 @@
 
             </div>
 
-            <!-- POPULARES -->
-            <div class="popular-wrapper">
+            <!-- MODAL COM ITENS DO CARDAPIO -->
+            <!-- ========================================================= -->
+<!-- CARDÁPIO -->
+<!-- ========================================================= -->
 
-                <div class="popular-title">
-                    <span></span>
-                    Mais Pedidos da Noite
+<section class="menu-section" id="menu">
+
+    <div class="container">
+
+        <div class="menu-header">
+
+            <span class="section-tag">
+                NOSSO CARDÁPIO
+            </span>
+
+            <h2>
+                Escolha uma categoria
+            </h2>
+
+            <p>
+                Clique em uma categoria para visualizar todos os produtos disponíveis.
+            </p>
+
+        </div>
+
+
+        <div class="menu-grid">
+
+            <!-- ===================== -->
+            <!-- LANCHES -->
+            <!-- ===================== -->
+
+            <div class="menu-card" data-modal="modal-lanches">
+
+                <div class="menu-card-image">
+
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900"
+                        alt="Hambúrguer">
+
                 </div>
 
-                <div class="popular-grid">
+                <div class="menu-card-content">
 
-                    <!-- ITEM -->
-                    <div class="popular-card">
-                        <div class="popular-image">
-                            <img src="img/heineken.jpg" alt="Heineken 600ml">
-                        </div>
-                        <div class="popular-content">
-                            <div class="popular-badge">
-                                MAIS PEDIDO
-                            </div>
-                            <h3>Heineken 600ml</h3>
-                            <p>
-                                Cerveja puro malte gelada, perfeita para compartilhar com os amigos.
-                            </p>
-                            <div class="popular-bottom">
-                                <span class="popular-price">
-                                    R$ 17,99
-                                </span>
-                                <button class="popular-btn"
-                                    onclick="window.open('files/cardapio-bar75sv.pdf', '_blank')">
-                                    Visualizar item
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                    <span class="menu-category">
+                        LANCHES
+                    </span>
 
-                    <!-- ITEM -->
-                    <div class="popular-card">
-                        <div class="popular-image">
-                            <img src="img/redlabel.jpg">
-                        </div>
-                        <div class="popular-content">
-                            <div class="popular-badge">
-                                FAVORITO
-                            </div>
-                            <h3>Combo Red Label</h3>
-                            <p>
-                                Perfeito para curtir a noite com os amigos.
-                                Acompanha 4 redbulls e 4 gelos de sabor.
-                            </p>
-                            <div class="popular-bottom">
-                                <span class="popular-price">
-                                    R$ 280,00
-                                </span>
+                    <h3>
+                        Hambúrgueres
+                    </h3>
 
-                                <button class="popular-btn"
-                                    onclick="window.open('files/cardapio-bar75sv.pdf', '_blank')">
-                                    Visualizar item
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                    <p>
+                        Hambúrgueres artesanais, porções e acompanhamentos preparados na hora.
+                    </p>
 
-                    <!-- ITEM -->
-                    <div class="popular-card">
+                    <button>
+                        Ver opções
+                    </button>
 
-                        <div class="popular-image">
-                            <img src="img/caipirinha.jpg">
-                        </div>
-
-                        <div class="popular-content">
-
-                            <div class="popular-badge">
-                                BOA OPÇÃO
-                            </div>
-
-                            <h3>Caipirinha</h3>
-
-                            <p>
-                                Ideal para se refrescar. Com 3 opções de sabor: Limão, Morango e Maracujá.
-                            </p>
-
-                            <div class="popular-bottom">
-
-                                <span class="popular-price">
-                                    R$ 25,00
-                                </span>
-
-                                <button class="popular-btn"
-                                    onclick="window.open('files/cardapio-bar75sv.pdf', '_blank')">
-                                    Visualizar item
-                                </button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+
             </div>
+
+
+            <!-- ===================== -->
+            <!-- CERVEJAS -->
+            <!-- ===================== -->
+
+            <div class="menu-card" data-modal="modal-cervejas">
+
+                <div class="menu-card-image">
+
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=900"
+                        alt="Cerveja">
+
+                </div>
+
+                <div class="menu-card-content">
+
+                    <span class="menu-category">
+                        CERVEJAS
+                    </span>
+
+                    <h3>
+                        Cervejas Geladas
+                    </h3>
+
+                    <p>
+                        Long necks, garrafas e cervejas especiais sempre bem geladas.
+                    </p>
+
+                    <button>
+                        Ver opções
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ===================== -->
+            <!-- DESTILADOS -->
+            <!-- ===================== -->
+
+            <div class="menu-card" data-modal="modal-destilados">
+
+                <div class="menu-card-image">
+
+                    <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=900"
+                        alt="Whisky">
+
+                </div>
+
+                <div class="menu-card-content">
+
+                    <span class="menu-category">
+                        DESTILADOS
+                    </span>
+
+                    <h3>
+                        Whiskys e Drinks
+                    </h3>
+
+                    <p>
+                        As melhores opções de whisky, vodka, gin e diversos combos.
+                    </p>
+
+                    <button>
+                        Ver opções
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ===================== -->
+            <!-- ENERGÉTICOS -->
+            <!-- ===================== -->
+
+            <div class="menu-card" data-modal="modal-bebidas">
+
+                <div class="menu-card-image">
+
+                    <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=900"
+                        alt="Energéticos">
+
+                </div>
+
+                <div class="menu-card-content">
+
+                    <span class="menu-category">
+                        BEBIDAS
+                    </span>
+
+                    <h3>
+                        Energéticos & Refrigerantes
+                    </h3>
+
+                    <p>
+                        Energéticos, refrigerantes e bebidas sem álcool.
+                    </p>
+
+                    <button>
+                        Ver opções
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ========================================================= -->
+<!-- MODAL - LANCHES -->
+<!-- ========================================================= -->
+
+<div class="menu-modal" id="modal-lanches">
+
+    <div class="modal-content">
+
+        <button class="close-modal">
+            &times;
+        </button>
+
+        <div class="modal-header">
+
+            <span>🍔</span>
+
+            <h2>
+                Lanches
+            </h2>
+
+            <p>
+                Escolha seu lanche favorito.
+            </p>
+
+        </div>
+
+        <div class="modal-items">
+
+            <div class="modal-item">
+
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400">
+
+                <div class="modal-info">
+
+                    <h4>
+                        X-Tudo
+                    </h4>
+
+                    <p>
+                        Hambúrguer artesanal, queijo, bacon, salada e molho especial.
+                    </p>
+
+                </div>
+
+                <span class="item-price">
+                    R$ 34,90
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- ========================================================= -->
+<!-- MODAL - CERVEJAS -->
+<!-- ========================================================= -->
+
+<div class="menu-modal" id="modal-cervejas">
+
+    <div class="modal-content">
+
+        <button class="close-modal">
+            &times;
+        </button>
+
+        <div class="modal-header">
+
+            <span>🍺</span>
+
+            <h2>
+                Cervejas
+            </h2>
+
+            <p>
+                Escolha sua cerveja.
+            </p>
+
+        </div>
+
+        <div class="modal-items">
+
+            <div class="modal-item">
+
+                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400">
+
+                <div class="modal-info">
+
+                    <h4>
+                        Heineken 600ml
+                    </h4>
+
+                    <p>
+                        Cerveja puro malte extremamente gelada.
+                    </p>
+
+                </div>
+
+                <span class="item-price">
+                    R$ 17,99
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- ========================================================= -->
+<!-- MODAL - DESTILADOS -->
+<!-- ========================================================= -->
+
+<div class="menu-modal" id="modal-destilados">
+
+    <div class="modal-content">
+
+        <button class="close-modal">
+            &times;
+        </button>
+
+        <div class="modal-header">
+
+            <span>🥃</span>
+
+            <h2>
+                Destilados
+            </h2>
+
+            <p>
+                Escolha seu destilado.
+            </p>
+
+        </div>
+
+        <div class="modal-items">
+
+            <div class="modal-item">
+
+                <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+
+                <div class="modal-info">
+
+                    <h4>
+                        Red Label
+                    </h4>
+
+                    <p>
+                        Whisky escocês clássico.
+                    </p>
+
+                </div>
+
+                <span class="item-price">
+                    R$ 280,00
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
         </div>
     </section>
 

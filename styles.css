@@ -567,194 +567,6 @@ body {
 }
 
 
-
-
-/* =========================
-   POPULAR
-========================= */
-
-.popular-wrapper {
-    position: relative;
-    z-index: 2;
-
-    margin-top: 80px;
-}
-
-.popular-title {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-
-    margin-bottom: 40px;
-
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
-.popular-title span {
-    width: 40px;
-    height: 3px;
-
-    border-radius: 999px;
-
-    background: #E5B800;
-}
-
-/* =========================
-   POPULAR GRID
-========================= */
-
-.popular-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(300px, 1fr));
-
-    gap: 28px;
-}
-
-/* =========================
-   POPULAR CARD
-========================= */
-
-.popular-card {
-    overflow: hidden;
-
-    border-radius: 28px;
-
-    background:
-        linear-gradient(180deg,
-            #181818 0%,
-            #111 100%);
-
-    border:
-        1px solid rgba(255, 255, 255, .05);
-
-    transition:
-        transform .4s ease,
-        border-color .4s ease,
-        box-shadow .4s ease;
-}
-
-.popular-card:hover {
-    transform: translateY(-10px);
-
-    border-color:
-        rgba(229, 184, 0, .25);
-
-    box-shadow:
-        0 30px 60px rgba(0, 0, 0, .45);
-}
-
-.popular-image {
-    height: 260px;
-
-    overflow: hidden;
-}
-
-.popular-image img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    transition:
-        transform .7s ease,
-        filter .5s ease;
-
-    filter:
-        brightness(.8) contrast(1.05);
-}
-
-.popular-card:hover img {
-    transform: scale(1.08);
-
-    filter:
-        brightness(.95) contrast(1.1);
-}
-
-.popular-content {
-    padding: 28px;
-}
-
-.popular-badge {
-    display: inline-flex;
-
-    padding: 8px 14px;
-
-    border-radius: 999px;
-
-    background:
-        rgba(229, 184, 0, .12);
-
-    border:
-        1px solid rgba(229, 184, 0, .25);
-
-    color: #E5B800;
-
-    font-size: .75rem;
-    font-weight: 700;
-
-    letter-spacing: .08em;
-
-    margin-bottom: 20px;
-}
-
-.popular-content h3 {
-    font-size: 1.8rem;
-
-    margin-bottom: 12px;
-
-    font-weight: 700;
-}
-
-.popular-content p {
-    color: #8d8d8d;
-
-    line-height: 1.7;
-
-    margin-bottom: 28px;
-}
-
-.popular-bottom {
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-}
-
-.popular-price {
-    color: #E5B800;
-
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-
-.popular-btn {
-    border: none;
-
-    padding: 14px 22px;
-
-    border-radius: 14px;
-
-    background: #1d1d1d;
-
-    color: #fff;
-
-    cursor: pointer;
-
-    transition:
-        background .3s ease,
-        transform .3s ease;
-}
-
-.popular-btn:hover {
-    background: #E5B800;
-    color: #000;
-
-    transform: translateY(-2px);
-}
-
 /* =========================
    EVENTS
 ========================= */
@@ -1543,4 +1355,468 @@ body {
         gap: 12px;
     }
 
+}
+
+
+
+
+/* TESTES PARA MODAL DE ITENS DO CARDAPIO  */
+
+/* =======================================================
+   MENU SECTION
+======================================================= */
+
+.menu-section{
+    position:relative;
+    padding:140px 0;
+    background:#0a0a0a;
+    overflow:hidden;
+}
+
+.menu-section::before{
+    content:"";
+    position:absolute;
+    width:600px;
+    height:600px;
+    background:radial-gradient(#ffd23f22,transparent 70%);
+    top:-250px;
+    left:-250px;
+    pointer-events:none;
+}
+
+.menu-section::after{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:radial-gradient(#ffd23f10,transparent 70%);
+    bottom:-250px;
+    right:-250px;
+    pointer-events:none;
+}
+
+/* =======================================================
+   HEADER
+======================================================= */
+
+.menu-header{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:8px 18px;
+    border-radius:999px;
+    background:rgba(255,208,0,.08);
+    border:1px solid rgba(255,208,0,.25);
+    color:#FFD23F;
+    font-size:.85rem;
+    letter-spacing:2px;
+    font-weight:600;
+    text-transform:uppercase;
+}
+
+.menu-header h2{
+    margin-top:22px;
+    color:#fff;
+    font-size:clamp(2.2rem,5vw,4rem);
+    font-weight:700;
+}
+
+.menu-header p{
+    margin-top:20px;
+    max-width:700px;
+    margin-inline:auto;
+    color:rgba(255,255,255,.65);
+    line-height:1.8;
+}
+
+/* =======================================================
+   GRID
+======================================================= */
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+    gap:35px;
+}
+
+/* =======================================================
+   CARD
+======================================================= */
+
+.menu-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:28px;
+    background:#111;
+    border:1px solid rgba(255,210,63,.08);
+    transition:.45s;
+    cursor:pointer;
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+
+.menu-card:hover{
+    transform:translateY(-12px);
+    border-color:#FFD23F55;
+    box-shadow:0 35px 70px rgba(0,0,0,.45),0 0 35px rgba(255,210,63,.12);
+}
+
+.menu-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg,transparent,rgba(0,0,0,.55));
+    z-index:1;
+}
+
+.menu-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(130deg,rgba(255,210,63,.10),transparent 40%);
+    opacity:0;
+    transition:.45s;
+}
+
+.menu-card:hover::after{
+    opacity:1;
+}
+
+/* =======================================================
+   IMAGE
+======================================================= */
+
+.menu-card-image{
+    height:280px;
+    overflow:hidden;
+}
+
+.menu-card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:1s cubic-bezier(.22,1,.36,1);
+}
+
+.menu-card:hover img{
+    transform:scale(1.12);
+}
+
+/* =======================================================
+   CONTENT
+======================================================= */
+
+.menu-card-content{
+    position:relative;
+    z-index:2;
+    padding:30px;
+}
+
+.menu-category{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:8px 15px;
+    border-radius:100px;
+    background:#FFD23F;
+    color:#111;
+    font-size:.75rem;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.menu-card-content h3{
+    margin-top:22px;
+    color:#fff;
+    font-size:1.8rem;
+    font-weight:700;
+}
+
+.menu-card-content p{
+    margin-top:15px;
+    color:rgba(255,255,255,.68);
+    line-height:1.8;
+    min-height:70px;
+}
+
+/* =======================================================
+   BUTTON
+======================================================= */
+
+.menu-card-content button{
+    margin-top:25px;
+    width:100%;
+    height:55px;
+    border:none;
+    border-radius:14px;
+    background:#FFD23F;
+    color:#111;
+    font-weight:700;
+    cursor:pointer;
+    transition:.35s;
+    font-size:.95rem;
+}
+
+.menu-card-content button:hover{
+    background:#fff;
+    transform:translateY(-2px);
+}
+
+/* =======================================================
+   HOVER
+======================================================= */
+
+.menu-card:hover .menu-category{
+    animation:pulseTag .7s;
+}
+
+@keyframes pulseTag{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.08);}
+    100%{transform:scale(1);}
+}
+
+.menu-card:hover h3{
+    color:#FFD23F;
+}
+
+/* =======================================================
+   RESPONSIVO
+======================================================= */
+
+@media(max-width:1100px){
+    .menu-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:760px){
+    .menu-grid{
+        grid-template-columns:1fr;
+    }
+
+    .menu-card-image{
+        height:230px;
+    }
+
+    .menu-header{
+        margin-bottom:50px;
+    }
+}
+
+/* =======================================================
+   MODAL
+======================================================= */
+
+.menu-modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.82);
+    backdrop-filter:blur(12px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:opacity .35s ease,visibility .35s ease;
+    z-index:9999;
+}
+
+.menu-modal.active{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+}
+
+.modal-content{
+    width:min(900px,100%);
+    max-height:85vh;
+    overflow-y:auto;
+    background:#121212;
+    border:1px solid rgba(255,210,63,.12);
+    border-radius:28px;
+    padding:40px;
+    position:relative;
+    transform:translateY(40px) scale(.92);
+    opacity:0;
+    transition:transform .45s cubic-bezier(.22,1,.36,1),opacity .45s;
+    box-shadow:0 40px 80px rgba(0,0,0,.45),0 0 40px rgba(255,210,63,.08);
+}
+
+.menu-modal.active .modal-content{
+    transform:translateY(0) scale(1);
+    opacity:1;
+}
+
+/* =======================================================
+   HEADER
+======================================================= */
+
+.modal-header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.modal-header span{
+    font-size:3rem;
+    display:block;
+    margin-bottom:15px;
+}
+
+.modal-header h2{
+    color:#fff;
+    font-size:2.3rem;
+    margin-bottom:10px;
+}
+
+.modal-header p{
+    color:rgba(255,255,255,.65);
+    line-height:1.8;
+}
+
+/* =======================================================
+   CLOSE BUTTON
+======================================================= */
+
+.close-modal{
+    position:absolute;
+    top:22px;
+    right:22px;
+    width:48px;
+    height:48px;
+    border:none;
+    border-radius:50%;
+    background:#1d1d1d;
+    color:#FFD23F;
+    font-size:1.5rem;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.close-modal:hover{
+    background:#FFD23F;
+    color:#111;
+    transform:rotate(90deg) scale(1.1);
+}
+
+/* =======================================================
+   ITEMS
+======================================================= */
+
+.modal-items{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.modal-item{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:18px;
+    border-radius:18px;
+    background:#181818;
+    border:1px solid rgba(255,255,255,.05);
+    transition:.35s;
+}
+
+.modal-item:hover{
+    transform:translateX(8px);
+    border-color:rgba(255,210,63,.25);
+    background:#1f1f1f;
+    box-shadow:0 10px 30px rgba(255,210,63,.08);
+}
+
+.modal-item img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:14px;
+    flex-shrink:0;
+}
+
+.modal-info{
+    flex:1;
+}
+
+.modal-info h4{
+    color:#fff;
+    font-size:1.15rem;
+    margin-bottom:8px;
+}
+
+.modal-info p{
+    color:rgba(255,255,255,.65);
+    line-height:1.6;
+}
+
+.item-price{
+    color:#FFD23F;
+    font-size:1.25rem;
+    font-weight:700;
+    white-space:nowrap;
+}
+
+/* =======================================================
+   SCROLL
+======================================================= */
+
+.modal-content::-webkit-scrollbar{
+    width:8px;
+}
+
+.modal-content::-webkit-scrollbar-track{
+    background:#1a1a1a;
+    border-radius:10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb{
+    background:#FFD23F;
+    border-radius:10px;
+}
+
+/* =======================================================
+   RESPONSIVO
+======================================================= */
+
+@media(max-width:700px){
+
+    .menu-modal{
+        padding:15px;
+    }
+
+    .modal-content{
+        padding:25px;
+        border-radius:20px;
+    }
+
+    .modal-item{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .modal-item img{
+        width:100%;
+        height:180px;
+    }
+
+    .item-price{
+        margin-top:10px;
+    }
+
+    .modal-header h2{
+        font-size:1.8rem;
+    }
+
+    .close-modal{
+        width:42px;
+        height:42px;
+    }
 }
