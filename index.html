@@ -190,7 +190,7 @@
         </div>
     </section>
 
-<!-- =============== GALERIA DO BAR PARA MOBILE =============== -->
+    <!-- =============== GALERIA DO BAR PARA MOBILE =============== -->
     <section class="mobile-gallery">
         <div class="mobile-track">
             <div class="mobile-card">
@@ -256,362 +256,559 @@
 
             <!-- MODAL COM ITENS DO CARDAPIO -->
             <!-- ========================================================= -->
-<!-- CARDÁPIO -->
-<!-- ========================================================= -->
+            <!-- CARDÁPIO -->
+            <!-- ========================================================= -->
 
-<section class="menu-section" id="menu">
+            <section class="menu-section" id="menu">
+                <div class="container">
+                    <div class="menu-header">
+                        
+                        <h2>
+                            Escolha uma categoria
+                        </h2>
+                        <p>
+                            Clique em uma categoria para visualizar todos os produtos disponíveis.
+                        </p>
+                    </div>
+                    <div class="menu-grid">
 
-    <div class="container">
+                        <!-- ===================== -->
+                        <!-- LANCHES -->
+                        <!-- ===================== -->
 
-        <div class="menu-header">
+                        <div class="menu-card" data-modal="modal-lanches">
+                            <div class="menu-card-image">
+                                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900"
+                                    alt="Hambúrguer">
+                            </div>
+                            <div class="menu-card-content">
+                                <span class="menu-category">
+                                    LANCHES
+                                </span>
+                                <h3>
+                                    Hambúrgueres
+                                </h3>
+                                <p>
+                                    Hambúrgueres artesanais, porções e acompanhamentos preparados na hora.
+                                </p>
+                                <button>
+                                    Ver opções
+                                </button>
+                            </div>
+                        </div>
 
-            <span class="section-tag">
-                NOSSO CARDÁPIO
-            </span>
 
-            <h2>
-                Escolha uma categoria
-            </h2>
+                        <!-- ===================== -->
+                        <!-- CERVEJAS -->
+                        <!-- ===================== -->
 
-            <p>
-                Clique em uma categoria para visualizar todos os produtos disponíveis.
-            </p>
+                        <div class="menu-card" data-modal="modal-cervejas">
+                            <div class="menu-card-image">
+                                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=900"
+                                    alt="Cerveja">
+                            </div>
+                            <div class="menu-card-content">
+                                <span class="menu-category">
+                                    CERVEJAS
+                                </span>
+                                <h3>
+                                    Cervejas 600mL
+                                </h3>
+                                <p>
+                                    As melhores cervejas 600ml sempre trincando de geladas, perfeitas para compartilhar e aproveitar a noite.
+                                    <br>
+                                </p>
+                                <button>
+                                    Ver opções
+                                </button>
+                            </div>
+                        </div>
 
-        </div>
+
+                        <!-- ===================== -->
+                        <!-- DESTILADOS -->
+                        <!-- ===================== -->
+
+                        <div class="menu-card" data-modal="modal-destilados">
+                            <div class="menu-card-image">
+                                <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=900"
+                                    alt="Whisky">
+                            </div>
+                            <div class="menu-card-content">
+                                <span class="menu-category">
+                                    DESTILADOS
+                                </span>
+                                <h3>
+                                    Whiskys e Drinks
+                                </h3>
+                                <p>
+                                    As melhores opções de whisky, vodka, gin e diversos combos.
+                                    <br>
+                                    <br>
+                                </p>
+                                <button>
+                                    Ver opções
+                                </button>
+                            </div>
+                        </div>
 
 
-        <div class="menu-grid">
+                        <!-- ===================== -->
+                        <!-- ENERGÉTICOS -->
+                        <!-- ===================== -->
 
-            <!-- ===================== -->
-            <!-- LANCHES -->
-            <!-- ===================== -->
-
-            <div class="menu-card" data-modal="modal-lanches">
-
-                <div class="menu-card-image">
-
-                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900"
-                        alt="Hambúrguer">
-
+                        <div class="menu-card" data-modal="modal-bebidas">
+                            <div class="menu-card-image">
+                                <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=900"
+                                    alt="Energéticos">
+                            </div>
+                            <div class="menu-card-content">
+                                <span class="menu-category">
+                                    BEBIDAS
+                                </span>
+                                <h3>
+                                    Drinks
+                                </h3>
+                                <p>
+                                    Preparados na hora, com ingredientes selecionados e com sabores perfeitos para melhorar sua noite.
+                                </p>
+                                <button>
+                                    Ver opções
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
+            <!-- ========================================================= -->
+            <!-- MODAL - LANCHES -->
+            <!-- ========================================================= -->
 
-                <div class="menu-card-content">
-
-                    <span class="menu-category">
-                        LANCHES
-                    </span>
-
-                    <h3>
-                        Hambúrgueres
-                    </h3>
-
-                    <p>
-                        Hambúrgueres artesanais, porções e acompanhamentos preparados na hora.
-                    </p>
-
-                    <button>
-                        Ver opções
+            <div class="menu-modal" id="modal-lanches">
+                <div class="modal-content">
+                    <button class="close-modal">
+                        &times;
                     </button>
-
+                    <div class="modal-header">
+                        <span>🍔</span>
+                        <h2>
+                            Lanches
+                        </h2>
+                        <p>
+                            Escolha seu lanche favorito.
+                        </p>
+                    </div>
+                    <div class="modal-items">
+                        <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    X-Tudo
+                                </h4>
+                                <p>
+                                    Hambúrguer artesanal, queijo, bacon, salada e molho especial.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 34,90
+                            </span>
+                        </div>
+                    </div>
                 </div>
-
             </div>
 
 
-            <!-- ===================== -->
-            <!-- CERVEJAS -->
-            <!-- ===================== -->
+            <!-- ========================================================= -->
+            <!-- MODAL - CERVEJAS -->
+            <!-- ========================================================= -->
 
-            <div class="menu-card" data-modal="modal-cervejas">
-
-                <div class="menu-card-image">
-
-                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=900"
-                        alt="Cerveja">
-
-                </div>
-
-                <div class="menu-card-content">
-
-                    <span class="menu-category">
-                        CERVEJAS
-                    </span>
-
-                    <h3>
-                        Cervejas Geladas
-                    </h3>
-
-                    <p>
-                        Long necks, garrafas e cervejas especiais sempre bem geladas.
-                    </p>
-
-                    <button>
-                        Ver opções
+            <div class="menu-modal" id="modal-cervejas">
+                <div class="modal-content">
+                    <button class="close-modal">
+                        &times;
                     </button>
-
+                    <div class="modal-header">
+                        <span>🍺</span>
+                        <h2>
+                            Cervejas
+                        </h2>
+                        <p>
+                            Escolha sua cerveja.
+                        </p>
+                    </div>
+                    <div class="modal-items">
+                        <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Heineken 600ml
+                                </h4>
+                                <p>
+                                    Cerveja puro malte extremamente gelada.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 17,99
+                            </span>
+                        </div>
+                    </div>
                 </div>
-
             </div>
 
+            <!-- ========================================================= -->
+            <!-- MODAL - DESTILADOS -->
+            <!-- ========================================================= -->
 
-            <!-- ===================== -->
-            <!-- DESTILADOS -->
-            <!-- ===================== -->
-
-            <div class="menu-card" data-modal="modal-destilados">
-
-                <div class="menu-card-image">
-
-                    <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=900"
-                        alt="Whisky">
-
-                </div>
-
-                <div class="menu-card-content">
-
-                    <span class="menu-category">
-                        DESTILADOS
-                    </span>
-
-                    <h3>
-                        Whiskys e Drinks
-                    </h3>
-
-                    <p>
-                        As melhores opções de whisky, vodka, gin e diversos combos.
-                    </p>
-
-                    <button>
-                        Ver opções
+            <div class="menu-modal" id="modal-destilados">
+                <div class="modal-content">
+                    <button class="close-modal">
+                        &times;
                     </button>
-
+                    <div class="modal-header">
+                        <span>🥃</span>
+                        <h2>
+                            Destilados
+                        </h2>
+                        <p>
+                            Escolha o que mais combina com você.
+                        </p>
+                    </div>
+                    <div class="modal-items">
+                        <!-- SMIRNOFF -->
+                        <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Smirnoff
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 150,00
+                            </span>
+                        </div>
+                        <!-- GORDONS -->
+                        <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Gordon's
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 190,00
+                            </span>
+                        </div>
+                        <!-- CAVALO BRANCO -->
+                        <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    White Horse
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 190,00
+                            </span>
+                        </div>
+                        <!-- ABSOLUT -->
+                         <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Absolut
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 220,00
+                            </span>
+                        </div>
+                        <!-- TANQUERAY -->
+                         <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Tanqueray
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 250,00
+                            </span>
+                        </div>
+                        <!-- BEEFEATER -->
+                        <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Beefeater
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 250,00
+                            </span>
+                        </div>
+                        <!-- RED LABEL -->
+                        <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Red Label
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 280,00
+                            </span>
+                        </div>
+                        <!-- GREY GOOSE -->
+                         <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Grey Goose
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 300,00
+                            </span>
+                        </div>
+                        <!-- JACK DANIELS -->
+                         <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Jack Daniels
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 330,00
+                            </span>
+                        </div>
+                        <!-- BUCHANANS -->
+                         <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Buchanan's
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 360,00
+                            </span>
+                        </div>
+                        <!-- BLACK LABEL -->
+                         <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Black Label
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 370,00
+                            </span>
+                        </div>
+                        <!-- CIROC RED -->
+                         <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Ciroc Red
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 380,00
+                            </span>
+                        </div>
+                        <!-- DOUBLE BLACK -->
+                         <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Double Black
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 400,00
+                            </span>
+                        </div>
+                        <!-- GOLD LABEL -->
+                         <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Gold Label
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 480,00
+                            </span>
+                        </div>
+                        <!-- ROYAL SALLUTE -->
+                         <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Royal Sallute
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 1.400,00
+                            </span>
+                        </div>
+                        <!-- BLUE LABEL -->
+                        <div class="modal-item">
+                            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
+                            <div class="modal-info">
+                                <h4>
+                                    Blue Label
+                                </h4>
+                                <p>
+                                    Acompanha 4 redbulls e 4 gelos de sabor.
+                                </p>
+                            </div>
+                            <span class="item-price">
+                                R$ 1.800,00
+                            </span>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-
-
-            <!-- ===================== -->
-            <!-- ENERGÉTICOS -->
-            <!-- ===================== -->
-
-            <div class="menu-card" data-modal="modal-bebidas">
-
-                <div class="menu-card-image">
-
-                    <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=900"
-                        alt="Energéticos">
-
+            <!-- ========================================================= -->
+            <!-- MODAL - ENERGETICOS E REFRI -->
+            <!-- ========================================================= -->
+            <div class="menu-modal" id="modal-bebidas">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <div class="modal-header">
+                        <span>🥤</span>
+                        <h2>Drinks</h2>
+                        <p>Escolha sua bebida.</p>
+                    </div>
+                    <!-- CAIPIRINHA -->
+                    <div class="modal-items">
+                        <div class="modal-item">
+                            <img src="img/redbull.jpg">
+                            <div class="modal-info">
+                                <h4>Caipirinha</h4>
+                                <p>Sabores: Limão, Morango e Maracujá</p>
+                            </div>
+                            <span class="item-price">
+                                R$ 25,00
+                            </span>
+                        </div>
+                        <!-- CAIPIROSKA -->
+                        <div class="modal-item">
+                            <img src="img/redbull.jpg">
+                            <div class="modal-info">
+                                <h4>Red Bull</h4>
+                                <p>Energético tradicional.</p>
+                            </div>
+                            <span class="item-price">
+                                R$ 15,00
+                            </span>
+                        </div>
+                        <!-- BATIDAS -->
+                        <div class="modal-item">
+                            <img src="img/redbull.jpg">
+                            <div class="modal-info">
+                                <h4>Red Bull</h4>
+                                <p>Energético tradicional.</p>
+                            </div>
+                            <span class="item-price">
+                                R$ 15,00
+                            </span>
+                        </div>
+                        <!-- SAQUERITA -->
+                        <div class="modal-item">
+                            <img src="img/redbull.jpg">
+                            <div class="modal-info">
+                                <h4>Red Bull</h4>
+                                <p>Energético tradicional.</p>
+                            </div>
+                            <span class="item-price">
+                                R$ 15,00
+                            </span>
+                        </div>
+                        <!-- FROZEN -->
+                        <div class="modal-item">
+                            <img src="img/redbull.jpg">
+                            <div class="modal-info">
+                                <h4>Red Bull</h4>
+                                <p>Energético tradicional.</p>
+                            </div>
+                            <span class="item-price">
+                                R$ 15,00
+                            </span>
+                        </div>
+                        <!-- ESPANHOLA -->
+                        <div class="modal-item">
+                            <img src="img/redbull.jpg">
+                            <div class="modal-info">
+                                <h4>Red Bull</h4>
+                                <p>Energético tradicional.</p>
+                            </div>
+                            <span class="item-price">
+                                R$ 15,00
+                            </span>
+                        </div>
+                        <!-- APEROL -->
+                         <div class="modal-item">
+                            <img src="img/redbull.jpg">
+                            <div class="modal-info">
+                                <h4>Red Bull</h4>
+                                <p>Energético tradicional.</p>
+                            </div>
+                            <span class="item-price">
+                                R$ 15,00
+                            </span>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="menu-card-content">
-
-                    <span class="menu-category">
-                        BEBIDAS
-                    </span>
-
-                    <h3>
-                        Energéticos & Refrigerantes
-                    </h3>
-
-                    <p>
-                        Energéticos, refrigerantes e bebidas sem álcool.
-                    </p>
-
-                    <button>
-                        Ver opções
-                    </button>
-
-                </div>
-
             </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-
-<!-- ========================================================= -->
-<!-- MODAL - LANCHES -->
-<!-- ========================================================= -->
-
-<div class="menu-modal" id="modal-lanches">
-
-    <div class="modal-content">
-
-        <button class="close-modal">
-            &times;
-        </button>
-
-        <div class="modal-header">
-
-            <span>🍔</span>
-
-            <h2>
-                Lanches
-            </h2>
-
-            <p>
-                Escolha seu lanche favorito.
-            </p>
-
-        </div>
-
-        <div class="modal-items">
-
-            <div class="modal-item">
-
-                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400">
-
-                <div class="modal-info">
-
-                    <h4>
-                        X-Tudo
-                    </h4>
-
-                    <p>
-                        Hambúrguer artesanal, queijo, bacon, salada e molho especial.
-                    </p>
-
-                </div>
-
-                <span class="item-price">
-                    R$ 34,90
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-
-
-
-
-<!-- ========================================================= -->
-<!-- MODAL - CERVEJAS -->
-<!-- ========================================================= -->
-
-<div class="menu-modal" id="modal-cervejas">
-
-    <div class="modal-content">
-
-        <button class="close-modal">
-            &times;
-        </button>
-
-        <div class="modal-header">
-
-            <span>🍺</span>
-
-            <h2>
-                Cervejas
-            </h2>
-
-            <p>
-                Escolha sua cerveja.
-            </p>
-
-        </div>
-
-        <div class="modal-items">
-
-            <div class="modal-item">
-
-                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400">
-
-                <div class="modal-info">
-
-                    <h4>
-                        Heineken 600ml
-                    </h4>
-
-                    <p>
-                        Cerveja puro malte extremamente gelada.
-                    </p>
-
-                </div>
-
-                <span class="item-price">
-                    R$ 17,99
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-
-
-
-
-<!-- ========================================================= -->
-<!-- MODAL - DESTILADOS -->
-<!-- ========================================================= -->
-
-<div class="menu-modal" id="modal-destilados">
-
-    <div class="modal-content">
-
-        <button class="close-modal">
-            &times;
-        </button>
-
-        <div class="modal-header">
-
-            <span>🥃</span>
-
-            <h2>
-                Destilados
-            </h2>
-
-            <p>
-                Escolha seu destilado.
-            </p>
-
-        </div>
-
-        <div class="modal-items">
-
-            <div class="modal-item">
-
-                <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400">
-
-                <div class="modal-info">
-
-                    <h4>
-                        Red Label
-                    </h4>
-
-                    <p>
-                        Whisky escocês clássico.
-                    </p>
-
-                </div>
-
-                <span class="item-price">
-                    R$ 280,00
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
         </div>
     </section>
 

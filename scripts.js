@@ -492,3 +492,91 @@ if (track) {
     });
 
 }
+
+// TESTE PARA MODAL DE ITENS DO CARDAPIO
+
+const cards=document.querySelectorAll(".menu-card");
+const modals=document.querySelectorAll(".menu-modal");
+const closeButtons=document.querySelectorAll(".close-modal");
+
+function openModal(id){
+    const modal=document.getElementById(id);
+
+    if(!modal)return;
+
+    modal.classList.add("active");
+    document.body.style.overflow="hidden";
+
+    const items=modal.querySelectorAll(".modal-item");
+
+    items.forEach((item,index)=>{
+        item.style.opacity="0";
+        item.style.transform="translateY(25px)";
+
+        setTimeout(()=>{
+            item.style.transition=".45s ease";
+            item.style.opacity="1";
+            item.style.transform="translateY(0)";
+        },120+(index*100));
+    });
+}
+
+function closeModal(modal){
+
+    modal.classList.remove("active");
+
+    document.body.style.overflow="";
+
+}
+
+cards.forEach(card=>{
+
+    card.addEventListener("click",()=>{
+
+        openModal(card.dataset.modal);
+
+    });
+
+});
+
+closeButtons.forEach(button=>{
+
+    button.addEventListener("click",()=>{
+
+        closeModal(button.closest(".menu-modal"));
+
+    });
+
+});
+
+modals.forEach(modal=>{
+
+    modal.addEventListener("click",(e)=>{
+
+        if(e.target===modal){
+
+            closeModal(modal);
+
+        }
+
+    });
+
+});
+
+document.addEventListener("keydown",(e)=>{
+
+    if(e.key==="Escape"){
+
+        modals.forEach(modal=>{
+
+            if(modal.classList.contains("active")){
+
+                closeModal(modal);
+
+            }
+
+        });
+
+    }
+
+});
