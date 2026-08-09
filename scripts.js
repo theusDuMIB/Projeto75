@@ -1,37 +1,24 @@
 window.addEventListener('load', () => {
-
     gsap.to('#loader-bar', {
-
         width: '100%',
         duration: 1.2,
         ease: 'power2.inOut',
-
         onComplete: () => {
-
             gsap.to('#loader', {
-
                 opacity: 0,
                 duration: 0.5,
-
                 onComplete: () => {
-
                     document.getElementById('loader').style.display = 'none';
-
                     gsap.to('#hero-content', {
                         opacity: 1,
                         y: 0,
                         duration: 1,
                         ease: 'power3.out'
                     });
-
                 }
-
             });
-
         }
-
     });
-
 });
 
 /* =========================
@@ -39,9 +26,7 @@ window.addEventListener('load', () => {
 ========================= */
 
 particlesJS('particles-js', {
-
     particles: {
-
         number: {
             value: 40,
             density: {
@@ -90,43 +75,31 @@ particlesJS('particles-js', {
             straight: false,
             out_mode: 'out'
         }
-
     },
 
     interactivity: {
-
         detect_on: 'canvas',
-
         events: {
-
             onhover: {
                 enable: true,
                 mode: 'grab'
             },
-
             onclick: {
                 enable: false
             },
-
             resize: true
-
         },
 
         modes: {
-
             grab: {
                 distance: 140,
                 line_linked: {
                     opacity: 0.4
                 }
             }
-
         }
-
     },
-
     retina_detect: true
-
 });
 
 gsap.registerPlugin(ScrollTrigger);
@@ -136,11 +109,9 @@ gsap.registerPlugin(ScrollTrigger);
 ========================= */
 
 const navbar = document.getElementById('navbar');
-
 window.addEventListener('scroll', () => {
 
     if (window.scrollY > 50) {
-
         navbar.classList.add(
             'bg-noir-black/85',
             'backdrop-blur-xl',
@@ -148,11 +119,8 @@ window.addEventListener('scroll', () => {
             'shadow-black/20',
             'py-3'
         );
-
         navbar.classList.remove('py-6');
-
     } else {
-
         navbar.classList.remove(
             'bg-noir-black/85',
             'backdrop-blur-xl',
@@ -160,11 +128,8 @@ window.addEventListener('scroll', () => {
             'shadow-black/20',
             'py-3'
         );
-
         navbar.classList.add('py-6');
-
     }
-
 });
 
 /* =========================
@@ -174,27 +139,19 @@ window.addEventListener('scroll', () => {
 const navLinks = document.querySelectorAll('.nav-link');
 
 window.addEventListener('scroll', () => {
-
     let current = '';
-
     document.querySelectorAll('section[id]').forEach(section => {
-
         if (window.scrollY >= section.offsetTop - 200) {
             current = section.getAttribute('id');
         }
-
     });
 
     navLinks.forEach(link => {
-
         link.classList.remove('active', 'text-noir-yellow');
-
         if (link.getAttribute('href') === `#${current}`) {
             link.classList.add('active', 'text-noir-yellow');
         }
-
     });
-
 });
 
 /* =========================
@@ -205,7 +162,6 @@ gsap.to('#home img', {
 
     yPercent: 20,
     ease: 'none',
-
     scrollTrigger: {
         trigger: '#home',
         start: 'top top',
@@ -455,42 +411,24 @@ window.addEventListener('scroll', () => {
 });
 
 
-
-
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 const track = document.querySelector(".gallery-track");
 
 if (track) {
-
     gsap.to(track, {
-
         x: () => -(track.scrollWidth - window.innerWidth),
-
         ease: "none",
-
         scrollTrigger: {
-
             trigger: ".gallery",
-
             start: "top top",
-
             end: () => "+=" + (track.scrollWidth - window.innerWidth),
-
             scrub: true,
-
             pin: true,
-
             anticipatePin: 1,
-
             invalidateOnRefresh: true
-
         }
-
     });
-
 }
 
 // TESTE PARA MODAL DE ITENS DO CARDAPIO
@@ -501,18 +439,13 @@ const closeButtons=document.querySelectorAll(".close-modal");
 
 function openModal(id){
     const modal=document.getElementById(id);
-
     if(!modal)return;
-
     modal.classList.add("active");
     document.body.style.overflow="hidden";
-
     const items=modal.querySelectorAll(".modal-item");
-
     items.forEach((item,index)=>{
         item.style.opacity="0";
         item.style.transform="translateY(25px)";
-
         setTimeout(()=>{
             item.style.transition=".45s ease";
             item.style.opacity="1";
@@ -522,61 +455,36 @@ function openModal(id){
 }
 
 function closeModal(modal){
-
     modal.classList.remove("active");
-
     document.body.style.overflow="";
-
 }
 
 cards.forEach(card=>{
-
     card.addEventListener("click",()=>{
-
         openModal(card.dataset.modal);
-
     });
 
 });
-
 closeButtons.forEach(button=>{
-
     button.addEventListener("click",()=>{
-
         closeModal(button.closest(".menu-modal"));
-
     });
-
 });
 
 modals.forEach(modal=>{
-
     modal.addEventListener("click",(e)=>{
-
         if(e.target===modal){
-
             closeModal(modal);
-
         }
-
     });
-
 });
 
 document.addEventListener("keydown",(e)=>{
-
     if(e.key==="Escape"){
-
         modals.forEach(modal=>{
-
             if(modal.classList.contains("active")){
-
                 closeModal(modal);
-
             }
-
         });
-
     }
-
 });
